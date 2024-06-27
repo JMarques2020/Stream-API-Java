@@ -44,9 +44,7 @@ public class CarrinhoDeCompras {
     if (itemList.isEmpty()) {
       throw new RuntimeException("A lista está vazia!");
     }
-    return itemList.stream()
-        .mapToDouble(item -> item.getPreco() * item.getQuant())
-        .sum();
+    return itemList.stream().mapToDouble(item -> item.getPreco() * item.getQuant()).sum();
   }
 }
 ```
